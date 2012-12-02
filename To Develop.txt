@@ -1,0 +1,7 @@
+proj - Colour, additional contents
+acknowledge - validation box for invalid entry
+devel - self and company modeling
+
+
+page linking as per name
+name, id, password and link
