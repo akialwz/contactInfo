@@ -29,7 +29,7 @@
 &nbsp; <input type="submit" value="FIND">
 </form>
 <?php
-  $find=$_POST['qu'];
+  $find=$_POST['find'];
   echo "<h3>Search Results</h3><p>";
   if ($find == ""){
   echo "<p>Please Enter a search term";
