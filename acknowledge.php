@@ -18,12 +18,12 @@
 <?php
 $username = $_POST['username'];
 $password = $_POST['password'];
-$con = mysql_connect("a.db.shared.orchestra.io","user_364d0732","&m$FB%9hF3rsbz");
+$con = mysql_connect("a.db.shared.orchestra.io","user_7b00e425",".Zzes-8Xsq!kaV");
 if(!$con)
 {
 echo "Error";
 }
-$db = mysql_select_db("db_364d0732");  
+$db = mysql_select_db("db_7b00e425");  
 $result = mysql_query("select * from signinfo where id= '".$username."'"); 
 while($row = mysql_fetch_assoc( $result )) {
 $name=$row['id'];
