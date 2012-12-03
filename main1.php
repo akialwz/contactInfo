@@ -25,7 +25,13 @@
 <br>
 
 <form name="detail1" action="detail1.php" method="post">
-<font color="white" face="chiller" size="5"><b>Enter Name:  </b></font><input type="text" name="qu" size="14"><br>
+<font color="white" face="chiller" size="5"><b>Select Category:  </b></font>
+<Select NAME="find">
+  <Option VALUE=""></option>
+  <Option VALUE=""></option>
+  <Option VALUE=""></option>
+  </Select>
+<br>
 &nbsp; <input type="submit" value="FIND">
 </form>
 
