@@ -19,7 +19,13 @@
 <br>
 <div align="center">
 <form name="detail1" action="detail1.php" method="post">
-<font color="white" face="chiller" size="5"><b>Enter Name:  </b></font><input type="text" name="qu" size="14"><br>
+<font color="white" face="chiller" size="5"><b>Select Category: </b></font>
+<Select NAME="find">
+  <Option VALUE=""></option>
+  <Option VALUE=""></option>
+  <Option VALUE=""></option>
+  </Select>
+<br>
 &nbsp; <input type="submit" value="FIND">
 </form>
 <?php
@@ -30,13 +36,13 @@
   exit;
   }
   
-  mysql_connect("localhost", "root", "") or die(mysql_error());
-  mysql_select_db("") or die(mysql_error());
+  mysql_connect("a.db.shared.orchestra.io", "user_7b00e425", ".Zzes-8Xsq!kaV") or die(mysql_error());
+  mysql_select_db("db_7b00e425") or die(mysql_error());
   $find = strtoupper($find);
   $find = strip_tags($find);
   $find = trim ($find);
 
-  $query = mysql_query("SELECT * FROM contact1 WHERE upper(name) LIKE'%$find%'");
+  $query = mysql_query("SELECT * FROM contact1 WHERE upper(category) LIKE'%$find%'");
   while($result = mysql_fetch_array($query)){
   echo $result['name'];
   echo $result['Address'];
